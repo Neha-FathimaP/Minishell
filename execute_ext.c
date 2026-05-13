@@ -34,11 +34,6 @@ void execute_external_commands(char *input_string)
     strcpy(cmd_with_options[k],buffer);
     k++;
     cmd_with_options[k]=NULL;
-
-
-   /* for (int x = 0; x < k; x++) {
-	printf("Token[%d]: %s\n", x, cmd_with_options[x]);
-    }*/
     int pcount=pipe_count(input_string);
     if(pcount>0)
 	n_pipe(cmd_with_options,pcount);
