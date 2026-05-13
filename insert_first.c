@@ -4,12 +4,6 @@
 #include"minishell.h"
 extern int pid;
 extern char input_string[25];
-/* struct node
-{
-    int child_pid;
-    char cmd_name[20];
-    struct node *link;
-};*/
 struct node *head=NULL;
 int insert_first(struct node **head)
 {
